@@ -1,0 +1,11 @@
+FROM python:3.9
+MAINTAINER eilhyo
+COPY pip.conf /root/.pip/pip.conf
+RUN mkdir -p /var/www/html/mysite6
+WORKDIR /var/www/html/mysite6
+ADD . /var/www/html/mysite6
+RUN pip install -r requirements.txt
+
+RUN sed -i 's/\r//' ./start.sh
+
+RUN chmod +x ./start.sh 
