@@ -1004,3 +1004,157 @@ Bad Request: /api/login/
 {address space usage: 158146560 bytes/150MB} {rss usage: 39407616 bytes/37MB} [pid: 24|app: 0|req: 1/1] 192.168.112.1 () {42 vars in 713 bytes} [Sat Apr 22 13:45:38 2023] POST /api/login/ => generated 68 bytes in 224 msecs (HTTP/1.1 400) 8 headers in 251 bytes (1 switches on core 0)
 {address space usage: 158146560 bytes/150MB} {rss usage: 39698432 bytes/37MB} [pid: 22|app: 0|req: 1/2] 192.168.112.1 () {42 vars in 719 bytes} [Sat Apr 22 13:46:10 2023] POST /api/register/ => generated 34 bytes in 243 msecs (HTTP/1.1 200) 8 headers in 250 bytes (1 switches on core 0)
 {address space usage: 158408704 bytes/151MB} {rss usage: 39907328 bytes/38MB} [pid: 22|app: 0|req: 2/3] 192.168.112.1 () {42 vars in 713 bytes} [Sat Apr 22 13:46:18 2023] POST /api/login/ => generated 52 bytes in 107 msecs (HTTP/1.1 200) 8 headers in 242 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr 24 09:04:29 2023] ***
+compiled with version: 10.2.1 20210110 on 24 April 2023 08:12:39
+os: Linux-5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023
+nodename: 898258bc3e7d
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /var/www/html/mysite6
+writing pidfile to /tmp/mysite6-master.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /var/www/html/mysite6
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+setgid() to 33
+setuid() to 33
+Python version: 3.9.16 (main, Apr 12 2023, 14:54:44)  [GCC 10.2.1 20210110]
+Python main interpreter initialized at 0x561073f6d410
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 403077 bytes (393 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561073f6d410 pid: 21 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21)
+spawned uWSGI worker 1 (pid: 22, cores: 1)
+spawned uWSGI worker 2 (pid: 24, cores: 1)
+Python auto-reloader enabled
+Bad Request: /api/login/
+{address space usage: 158146560 bytes/150MB} {rss usage: 39624704 bytes/37MB} [pid: 22|app: 0|req: 1/1] 172.19.0.1 () {44 vars in 767 bytes} [Mon Apr 24 09:05:02 2023] POST /api/login/ => generated 68 bytes in 341 msecs (HTTP/1.1 400) 8 headers in 251 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr 24 09:09:05 2023] ***
+compiled with version: 10.2.1 20210110 on 24 April 2023 08:12:39
+os: Linux-5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023
+nodename: 501eff373070
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /var/www/html/mysite6
+writing pidfile to /tmp/mysite6-master.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /var/www/html/mysite6
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+setgid() to 33
+setuid() to 33
+Python version: 3.9.16 (main, Apr 12 2023, 14:54:44)  [GCC 10.2.1 20210110]
+Python main interpreter initialized at 0x560518b68410
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 403077 bytes (393 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x560518b68410 pid: 22 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22)
+spawned uWSGI worker 1 (pid: 23, cores: 1)
+Python auto-reloader enabled
+spawned uWSGI worker 2 (pid: 25, cores: 1)
+Bad Request: /api/login/
+{address space usage: 158150656 bytes/150MB} {rss usage: 39661568 bytes/37MB} [pid: 25|app: 0|req: 1/1] 172.20.0.1 () {44 vars in 767 bytes} [Mon Apr 24 09:10:02 2023] POST /api/login/ => generated 68 bytes in 395 msecs (HTTP/1.1 400) 8 headers in 251 bytes (1 switches on core 0)
+Bad Request: /api/login/
+{address space usage: 158150656 bytes/150MB} {rss usage: 39682048 bytes/37MB} [pid: 25|app: 0|req: 2/2] 172.20.0.1 () {44 vars in 767 bytes} [Mon Apr 24 09:10:06 2023] POST /api/login/ => generated 68 bytes in 116 msecs (HTTP/1.1 400) 8 headers in 251 bytes (1 switches on core 0)
+Method Not Allowed: /
+{address space usage: 157327360 bytes/150MB} {rss usage: 36872192 bytes/35MB} [pid: 23|app: 0|req: 1/3] 172.20.0.1 () {44 vars in 747 bytes} [Mon Apr 24 09:10:24 2023] POST / => generated 41 bytes in 185 msecs (HTTP/1.1 405) 8 headers in 271 bytes (1 switches on core 0)
+{address space usage: 158150656 bytes/150MB} {rss usage: 39845888 bytes/38MB} [pid: 25|app: 0|req: 3/4] 172.20.0.1 () {44 vars in 746 bytes} [Mon Apr 24 09:10:31 2023] GET / => generated 46 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 255 bytes (1 switches on core 0)
+Method Not Allowed: /api/login/
+{address space usage: 158150656 bytes/150MB} {rss usage: 39845888 bytes/38MB} [pid: 25|app: 0|req: 4/5] 172.20.0.1 () {44 vars in 766 bytes} [Mon Apr 24 09:12:02 2023] GET /api/login/ => generated 40 bytes in 1 msecs (HTTP/1.1 405) 8 headers in 258 bytes (1 switches on core 0)
+Bad Request: /api/login/
+{address space usage: 158150656 bytes/150MB} {rss usage: 39845888 bytes/38MB} [pid: 25|app: 0|req: 5/6] 172.20.0.1 () {44 vars in 767 bytes} [Mon Apr 24 09:12:07 2023] POST /api/login/ => generated 68 bytes in 126 msecs (HTTP/1.1 400) 8 headers in 251 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr 24 09:23:25 2023] ***
+compiled with version: 10.2.1 20210110 on 24 April 2023 08:12:39
+os: Linux-5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023
+nodename: 900b2dd82292
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /var/www/html/mysite6
+writing pidfile to /tmp/mysite6-master.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /var/www/html/mysite6
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+setgid() to 33
+setuid() to 33
+Python version: 3.9.16 (main, Apr 12 2023, 14:54:44)  [GCC 10.2.1 20210110]
+Python main interpreter initialized at 0x560a71e85410
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 403077 bytes (393 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x560a71e85410 pid: 21 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21)
+spawned uWSGI worker 1 (pid: 22, cores: 1)
+spawned uWSGI worker 2 (pid: 24, cores: 1)
+Python auto-reloader enabled
+Method Not Allowed: /api/login/
+{address space usage: 157323264 bytes/150MB} {rss usage: 37060608 bytes/35MB} [pid: 24|app: 0|req: 1/1] 172.21.0.1 () {40 vars in 556 bytes} [Mon Apr 24 09:23:51 2023] GET /api/login/ => generated 40 bytes in 125 msecs (HTTP/1.1 405) 8 headers in 258 bytes (1 switches on core 0)
+Bad Request: /api/login/
+{address space usage: 157585408 bytes/150MB} {rss usage: 37060608 bytes/35MB} [pid: 24|app: 0|req: 2/2] 172.21.0.1 () {42 vars in 582 bytes} [Mon Apr 24 09:23:56 2023] POST /api/login/ => generated 79 bytes in 2 msecs (HTTP/1.1 400) 8 headers in 251 bytes (1 switches on core 0)
+{address space usage: 158445568 bytes/151MB} {rss usage: 38273024 bytes/36MB} [pid: 24|app: 0|req: 3/3] 172.21.0.1 () {52 vars in 846 bytes} [Mon Apr 24 09:24:42 2023] GET / => generated 5267 bytes in 38 msecs (HTTP/1.1 200) 9 headers in 401 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 157577216 bytes/150MB} {rss usage: 37359616 bytes/35MB} [pid: 22|app: 0|req: 1/4] 172.21.0.1 () {50 vars in 787 bytes} [Mon Apr 24 09:24:42 2023] GET /favicon.ico => generated 3156 bytes in 146 msecs (HTTP/1.1 404) 7 headers in 229 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr 24 10:38:23 2023] ***
+compiled with version: 10.2.1 20210110 on 24 April 2023 08:12:39
+os: Linux-5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023
+nodename: dc2791fe3878
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /var/www/html/mysite6
+writing pidfile to /tmp/mysite6-master.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /var/www/html/mysite6
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+setgid() to 33
+setuid() to 33
+Python version: 3.9.16 (main, Apr 12 2023, 14:54:44)  [GCC 10.2.1 20210110]
+Python main interpreter initialized at 0x556704dc6410
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 403077 bytes (393 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556704dc6410 pid: 21 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21)
+spawned uWSGI worker 1 (pid: 22, cores: 1)
+spawned uWSGI worker 2 (pid: 24, cores: 1)
+Python auto-reloader enabled
+Bad Request: /api/login/
+{address space usage: 157323264 bytes/150MB} {rss usage: 37023744 bytes/35MB} [pid: 24|app: 0|req: 1/1] 172.22.0.1 () {42 vars in 582 bytes} [Mon Apr 24 10:39:19 2023] POST /api/login/ => generated 79 bytes in 129 msecs (HTTP/1.1 400) 8 headers in 251 bytes (1 switches on core 0)

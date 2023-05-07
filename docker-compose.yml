@@ -8,6 +8,7 @@ services:
 
   db:
     image: mysql:5.7
+
     environment:
        - MYSQL_ROOT_PASSWORD=root # 数据库密码
        - MYSQL_DATABASE=mysite6 # 数据库名称
@@ -40,10 +41,9 @@ services:
   nginx:
     build: ./compose/nginx
     ports:
-       - "80:80"
-       - "443:443"
+       - "90:90"
     expose:
-       - "80"
+       - "90"
     volumes:
        - ./compose/nginx/ssl:/usr/share/nginx/ssl # 挂载ssl证书目录
        - ./compose/nginx/log:/var/log/nginx # 挂载日志
